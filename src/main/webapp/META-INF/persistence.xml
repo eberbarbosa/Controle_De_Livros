@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+                                 http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+             version="2.1">
+
+    <persistence-unit name="bibliotecaPersistence" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+
+        <class>br.com.eberbarbosa.entidades.Autor</class>
+        <class>br.com.eberbarbosa.entidades.Categoria</class>
+        <class>br.com.eberbarbosa.entidades.Editora</class>
+        <class>br.com.eberbarbosa.entidades.Emprestimo</class>
+        <class>br.com.eberbarbosa.entidades.Endereco</class>
+        <class>br.com.eberbarbosa.entidades.FuncionarioBiblioteca</class>
+        <class>br.com.eberbarbosa.entidades.Leitor</class>
+        <class>br.com.eberbarbosa.entidades.Livro</class>
+        <class>br.com.eberbarbosa.entidades.Pessoa</class>
+        <class>br.com.eberbarbosa.entidades.Telefone</class>
+        <class>br.com.eberbarbosa.entidades.Usuario</class>
+        <class>br.com.eberbarbosa.conversores.LocalDateConversor</class>
+
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="false"/>
+            <property name="hibernate.hbm2ddl.auto" value="validate"/>
+        </properties>
+    </persistence-unit>
+</persistence>
