@@ -2,8 +2,8 @@ package br.com.livros.interceptadores;
 
 import java.io.Serializable;
 
+import br.com.livros.util.MensagemUtil;
 import jakarta.inject.Inject;
-import jakarta.interceptor.AroundConstruct;
 import jakarta.interceptor.AroundInvoke;
 import jakarta.interceptor.Interceptor;
 import jakarta.interceptor.InvocationContext;
